@@ -37,6 +37,14 @@ The data can be directly downloaded from our web server:
 * Microarray CEL files: raw CEL files
 
 ## If you want to repeat our experiments:
+### Create positive labels 
+Download folder 'make_label' and run the following command:
+```
+perl Pick.pl
+perl Split_processed.pl
+python3 label.py
+```
+
 ### Train 
 Open split_5cv.ipynb and run the code inside. This step is to split the data set into 5 folds for the futural five-fold Cross Validation.
 For training, directly run 
@@ -85,7 +93,7 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 
-## If you want to test if your sample has contamination
+## If you want to test whether your sample has contamination
 ```
 ```
 ## If you want to use our recovered microarray data
