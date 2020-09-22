@@ -38,10 +38,29 @@ The data can be directly downloaded from our web server:
 
 
 ## Train 
-Open split_5cv.ipynb and run the code inside. This step is to split the data set into 5 folds 
+Open split_5cv.ipynb and run the code inside. This step is to split the data set into 5 folds for the futural five-fold Cross Validation.
+For training, directly run 
+```
+bash bash-cv1.sh
+bash bash-cv2.sh
+bash bash-cv3.sh
+bash bash-cv4.sh
+bash bash-cv5.sh
+```
 
 ## Prediction
-Users can run prediction code using out saved model.
-
+### Our original model
+Users can run prediction code using our saved model. Download the 'predict' folder, then
+```
+python3 pred-cv1.py
+python3 pred-cv2.py
+python3 pred-cv3.py
+python3 pred-cv4.py
+python3 pred-cv5.py
+```
+Then open dice_index.ipynb to calculate the dice coefficient
+### If you want to use our mocdel to predict your own sample, 
+```
+```
 
 ## Recover Contaminated Probes
