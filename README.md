@@ -1,4 +1,6 @@
 # Contamination in Published Microarray Studies Retrospectively Detected by Deep Learning
+In the Microarray study, we retrospectively constructed 37,724 raw microarray images, and developed a deep learning algorithm to automatically detect defects in the original images. We provided the identified problematic arrays, affected genes and the imputed arrays as well as software tools to scan for such contamination as a resource to the research community to help future studies to scrutinize and critically analyze these data. 
+Please contact (yananq@umich.edu or gyuanfan@umich.edu) if you have any questions or suggestions.
 
 ## Installation
 ```
