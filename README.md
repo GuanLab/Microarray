@@ -30,9 +30,11 @@ pip install opencv-python
 * [Jupyter Notebook](https://jupyter.org/)
 ## Dataset
 The data can be directly downloaded from our web server:
-*
-*
-*
+* Microarray positive labels: contains 842 human-labelled positive samples
+* Microarray raw images: contains 37724 raw microarray images
+* Microarray positive prediction results: contains 1810 positive prediction results 
+* Microarray recovered probe expression: contains 1703 recovered samples 
+* Microarray CEL files: raw CEL files
 
 
 ## Recover microarray images
