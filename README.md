@@ -32,6 +32,7 @@ pip install opencv-python
 * [re](https://docs.python.org/3/library/re.html)
 * R (3.6.1)
 * [Jupyter Notebook](https://jupyter.org/)
+* [Perl](https://www.perl.org/) (v5.26.1)
 ## Dataset
 The data can be directly downloaded from our web server:
 * Microarray positive labels: contains 842 human-labelled positive samples
