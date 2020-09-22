@@ -39,6 +39,10 @@ The data can be directly downloaded from our web server:
 * Microarray CEL files: raw CEL files
 
 ## If you want to repeat our experiments:
+
+### Recovering of microarray images from CEL files
+Download the folder 'reconstruct_to_image'
+
 ### Create positive labels 
 Download folder 'make_label' and run the following command:
 ```
