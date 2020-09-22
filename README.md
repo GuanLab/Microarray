@@ -37,7 +37,8 @@ The data can be directly downloaded from our web server:
 * Microarray CEL files: raw CEL files
 
 
-## Recover microarray images
+## Train 
+Open split_5cv.ipynb and run the code inside. This step is to split the data set into 5 folds 
 
 ## Prediction
 Users can run prediction code using out saved model.
