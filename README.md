@@ -36,8 +36,8 @@ The data can be directly downloaded from our web server:
 * Microarray recovered probe expression: contains 1703 recovered samples 
 * Microarray CEL files: raw CEL files
 
-
-## Train 
+## If you want to repeat our experiments:
+### Train 
 Open split_5cv.ipynb and run the code inside. This step is to split the data set into 5 folds for the futural five-fold Cross Validation.
 For training, directly run 
 ```
@@ -48,8 +48,7 @@ bash bash-cv4.sh
 bash bash-cv5.sh
 ```
 
-## Prediction
-### Our original model
+### Prediction
 Users can run prediction code using our saved model. Download the 'predict' folder, then
 ```
 python3 pred-cv1.py
@@ -59,8 +58,34 @@ python3 pred-cv4.py
 python3 pred-cv5.py
 ```
 Then open dice_index.ipynb to calculate the dice coefficient
-### If you want to use our mocdel to predict your own sample, 
+
+### Expression data in contaminated regions showed less coordinance within probesets
+Download folder 'compare_var', and open gene_expression.ipynb, run the code inside. Then
 ```
+R get_RMA.R
+python3 Var_compare.py
+```
+Open and run Var_compare.ipynb, you can access the result.
+
+### Literature mining
+Download folder 'crawl' and run crawl.py using the following command 
+```
+python3 crawl.py
 ```
 
-## Recover Contaminated Probes
+
+### Recover Contaminated Probes
+Download folder 'recover' and run the code in recover.ipynb. Inside the ipynb file, there are some commands to ask you run R and python code:
+```
+R recover.R
+python3 recover_intensity.py 
+python3 recover_save_to_map_txt.py
+```
+Contam_list.ipynb is to give the list of contaminated genes in samples tested as positive
+
+
+
+## If you want to test if your sample has contamination
+```
+```
+## If you want to use our recovered microarray data
