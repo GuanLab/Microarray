@@ -1,5 +1,5 @@
 # Contamination in Published Microarray Studies Retrospectively Detected by Deep Learning
-In the Microarray study, we retrospectively constructed 37,724 raw microarray images, and developed a deep learning algorithm to automatically detect defects in the original images. We provided the identified problematic arrays, affected genes and the imputed arrays as well as software tools to scan for such contamination as a resource to the research community to help future studies to scrutinize and critically analyze these data. 
+In the Microarray study, we retrospectively constructed 37,724 raw microarray images, and developed a deep learning algorithm to automatically detect defects in the original images. Here we provide the identified problematic arrays, affected genes and the imputed arrays as well as software tools to scan for such contamination as a resource to the research community to help future studies to scrutinize and critically analyze these data. 
 Please contact (yananq@umich.edu or gyuanfan@umich.edu) if you have any questions or suggestions.
 ![Figure1](Figure/Fig2.png?raw=true "Title")
 
@@ -35,13 +35,9 @@ pip install opencv-python
 * [Perl](https://www.perl.org/) (v5.26.1)
 ## Dataset
 The data can be directly downloaded from our web server:
-* Microarray positive labels: contains 842 human-labelled positive samples
-* Microarray raw images: contains 37724 raw microarray images
-* Microarray positive prediction results: contains 1810 positive prediction results 
 * Microarray recovered probe expression: contains 1703 recovered samples 
-* Microarray CEL files: raw CEL files
 
-## If you want to repeat our experiments:
+## Codes for experiments 
 
 ### Recovering of microarray images from CEL files
 Download the folder 'reconstruct_to_image'
@@ -90,7 +86,6 @@ Download folder 'crawl' and run crawl.py using the following command
 python3 crawl.py
 ```
 
-
 ### Recover Contaminated Probes
 Download folder 'recover' and run the code in recover.ipynb. Inside the ipynb file, there are some commands to ask you run R and python code:
 ```
@@ -103,6 +98,8 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 ## If you want to test whether your sample has contamination
+Go to 'Example' folder and download pred_example.py. Run the following command:
 ```
+python3 pred_example.py
 ```
 ## If you want to use our recovered microarray data
