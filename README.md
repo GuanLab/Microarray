@@ -98,7 +98,11 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 ## If you want to test whether your sample has contamination
-Download the 'Example' folder. Run the following command:
+Download the 'Example' folder. 
+First of all, you would need to recover your microarray cel file to an image:
+```
+```
+Run the following command:
 ```
 python3 pred_example.py
 ```
