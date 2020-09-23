@@ -97,7 +97,7 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 
-## If you want to test whether your sample has contamination
+## Vignettes -- if you want to test whether your sample has contamination
 Download the 'Example' folder. 
 First of all, you would need to recover your microarray cel file to an image:
 ```
