@@ -33,14 +33,17 @@ pip install opencv-python
 * R (3.6.1)
 * [Jupyter Notebook](https://jupyter.org/)
 * [Perl](https://www.perl.org/) (v5.26.1)
+
+
 ## Dataset
 The data can be directly downloaded from our web server:
 * Microarray recovered probe expression: contains 1703 recovered samples 
+* Contam_genes: contains the list of contaminated genes for every positive sample
 
 ## Codes for experiments 
 
 ### Recovering of microarray images from CEL files
-Download the folder 'reconstruct_to_image'
+Download the folder 'reconstruct_to_image' and run the code inside.
 
 ### Create positive labels 
 Download folder 'make_label' and run the following command:
@@ -98,7 +101,7 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 ## Vignettes -- if you want to test whether your sample has contamination
-Download the 'Example' folder. 
+Download the 'Example' folder and have the microarray CEL file in hand. 
 First of all, you would need to recover your microarray cel file to an image:
 ```
 ```
@@ -117,4 +120,7 @@ python3 recover_example.py
 Then recovered.txt will be the recovered probe intensities.
 
 ## If you want to use our recovered microarray data
-Our recovered data is available to be downloaded from our lab server
+Our recovered data is available to be downloaded from our lab server. Note that our recovered data only has 1703 microarray samples with defects, so please check data availability before using.
+* Microarray recovered probe expression: contains 1703 recovered samples. The recovered probe expressions of every sample were saved in a TXT file with the same name as CEL file. We save the recoverd value as: probe id: value. 
+* contam_genes: contains the list of contaminated genes for every positive sample
+For example, if your CEL is called XX.CEL, XX.CEL.txt in Microarray recovered probe expression contains recovered probe expression and XX.CEL.txt in contam_genes contains a list of genes with defects.
