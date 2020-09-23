@@ -105,7 +105,7 @@ Have the microarray CEL file in hand.
 First of all, you would need to recover your microarray cel file to an image:
 ```
 ```
-Run the following command:
+Change the file path as directed, then run the following command:
 ```
 python3 Example/pred_example.py
 ```
