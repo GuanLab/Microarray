@@ -75,7 +75,7 @@ Then open dice_index.ipynb to calculate the dice coefficient
 ### Expression data in contaminated regions showed less coordinance within probesets
 Download folder 'compare_var', and open gene_expression.ipynb, run the code inside. Then
 ```
-R get_RMA.R
+Rscript get_RMA.R
 python3 Var_compare.py
 ```
 Open and run Var_compare.ipynb, you can access the result.
@@ -89,7 +89,7 @@ python3 crawl.py
 ### Recover Contaminated Probes
 Download folder 'recover' and run the code in recover.ipynb. Inside the ipynb file, there are some commands to ask you run R and python code:
 ```
-R recover.R
+Rscript recover.R
 python3 recover_intensity.py 
 python3 recover_save_to_map_txt.py
 ```
@@ -111,7 +111,7 @@ This command will have two resulting files:
 * contam_genes.txt: contains the genes whose probes locats at contaminated area
 In order to recover the contaminated region, you should have the original CEL file in hand, and run the following command:
 ```
-R recover_example.R
+Rscript recover_example.R
 python3 recover_example.py
 ```
 Then recovered.txt will be the recovered probe intensities.
