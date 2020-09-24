@@ -36,9 +36,10 @@ pip install opencv-python
 
 
 ## Dataset
-The data can be directly downloaded from our web server:
-* Microarray recovered probe expression: contains 1703 recovered samples 
+The data can be directly downloaded from [https://osf.io/g4qxu/?view_only=3aaf0f0469744e54befbc4f86143ab47] on Open Science Framework:
+* recovered: contains 1703 recovered samples 
 * Contam_genes: contains the list of contaminated genes for every positive sample
+* label: human-labelled microarray images
 
 ## Codes for experiments 
 
@@ -120,7 +121,7 @@ python3 Example/recover_example.py
 Then recovered.txt will be the recovered probe intensities.
 
 ## If you want to use our recovered microarray data
-Our recovered data is available to be downloaded from our lab server. Note that our recovered data only has 1703 microarray samples with defects, so please check data availability before using.
+Our recovered data is available to be downloaded from Open Science Framework. Note that our recovered data only has 1703 microarray samples with defects, so please check data availability before using.
 * Microarray recovered probe expression: contains 1703 recovered samples. The recovered probe expressions of every sample were saved in a TXT file with the same name as CEL file. We save the recoverd value as: probe id: value. 
 * contam_genes: contains the list of contaminated genes for every positive sample
 For example, if your CEL is called XX.CEL, XX.CEL.txt in Microarray recovered probe expression contains recovered probe expression and XX.CEL.txt in contam_genes contains a list of genes with defects.
