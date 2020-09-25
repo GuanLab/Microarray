@@ -44,7 +44,11 @@ The data can be directly downloaded from [https://osf.io/g4qxu/?view_only=3aaf0f
 ## Codes for experiments 
 
 ### Recovering of microarray images from CEL files
-Download the folder 'reconstruct_to_image' and run the code inside.
+Download the folder 'reconstruct_to_image' and run the following command:
+```
+python3 setup.py build
+python3 test_full.py
+```
 
 ### Create positive labels 
 Download folder 'make_label' and run the following command:
@@ -102,11 +106,16 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 ## Vignettes -- if you want to test whether your sample has contamination
-Have the microarray CEL file in hand. 
+Have the microarray CEL file in hand.
+Before doing the first step, make sure you have changed the directory in cel_to_img.py to the one of your cel file
 First of all, you would need to recover your microarray cel file to an image:
 ```
+python3 setup.py build 
+python3 cel_to_img.py
 ```
-Change the file path as directed, then run the following command:
+The result is a image png file converted from microarray CEL file. 
+
+Then run the following command:
 ```
 python3 Example/pred_example.py
 ```
