@@ -106,7 +106,7 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 ## Vignettes -- if you want to test whether your sample has contamination
-Have the microarray CEL file in hand and download Github folder 'Example' and our deep learning model from OSF. Move the model into 'Example'./
+Have the microarray CEL file in hand and download Github folder 'Example' and our deep learning model from OSF. Move the model into 'Example'.<br />
 Before doing the first step, make sure you have changed the directory in cel_to_img.py. 
 First of all, you would need to recover your microarray cel file to an image:
 ```
@@ -136,4 +136,10 @@ Our recovered data is available to be downloaded from Open Science Framework. No
 For example, if your CEL is called XX.CEL, XX.CEL.txt in Microarray recovered probe expression contains recovered probe expression and XX.CEL.txt in contam_genes contains a list of genes with defects.
 
 ## FAQ
-* 
+* My microarray sample does not appear in the set of 1,810 contaminated samples, does that mean my sample does not have contamination?<br />
+Answer: No. We only tested 37,724 microarray samples published before 2019. To get a better result, we encourage you follow our instruction and use our model to test your microarray sample.
+* Can the deep learning model be applied to all platforms of microarrays? <br />
+Answer: No. We used microarray images of Hg-U133 Plus2 platform to train our model. The model validity on other platforms are not available yet.
+* The code does not work. What should I do?<br />
+Answer: We recommend that you check all the packages installed and check whether you have changed all the directories in the code. If that does not solve your problem, raise an issue.
+
