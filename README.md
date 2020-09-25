@@ -141,5 +141,6 @@ Answer: No. We only tested 37,724 microarray samples published before 2019. To g
 * Can the deep learning model be applied to all platforms of microarrays? <br />
 Answer: No. We used microarray images of Hg-U133 Plus2 platform to train our model. The model validity on other platforms are not available yet.
 * The code does not work. What should I do?<br />
-Answer: We recommend that you check all the packages installed and check whether you have changed all the directories in the code. If that does not solve your problem, raise an issue.
+Answer: We recommend that you check all the packages installed and check whether you have changed all the directories in the code. If that does not solve your problem, please create a ticket on the GitHub Issue Tracker.
+
 
