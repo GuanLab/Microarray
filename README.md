@@ -37,9 +37,11 @@ pip install opencv-python
 
 ## Dataset
 The data can be directly downloaded from [https://osf.io/g4qxu/?view_only=3aaf0f0469744e54befbc4f86143ab47] on Open Science Framework:
-* recovered: contains 1703 recovered samples 
+* recovered v1-v6: contains 1703 recovered samples 
 * Contam_genes: contains the list of contaminated genes for every positive sample
 * label: human-labelled microarray images
+* model: our deep learning model
+* HG-U133_Plus_2.cdf: cdf file for HG-U133_Plus_2 platform
 
 ## Codes for experiments 
 
@@ -106,7 +108,7 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 ## Vignettes -- if you want to test whether your sample has contamination
-Have the microarray CEL file in hand and download Github folder 'Example' and our deep learning model from OSF. Move the model into 'Example'.<br />
+Have the microarray CEL file in hand and download Github folder 'Example', our deep learning model and HG-U133_Plus_2.cdf from OSF. Move the model and cdf file into 'Example'.<br />
 Before doing the first step, make sure you have changed the directory in cel_to_img.py. 
 First of all, you would need to recover your microarray cel file to an image:
 ```
