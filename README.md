@@ -46,24 +46,25 @@ The data can be directly downloaded from [Open Science Framework](https://osf.io
 ## Codes for experiments 
 
 ### Recovering of microarray images from CEL files
-Download the folder 'reconstruct_to_image' and run the following command:
+Run the following command:
 ```
-python3 setup.py build
-python3 test_full.py
+python3 ./reconstruct_to_image/setup.py build
+python3 ./reconstruct_to_image/test.py
 ```
 
 ### Create positive labels 
-Download folder 'make_label' and run the following command:
+Run the following command:
 ```
-perl Pick.pl
-perl Split_processed.pl
-python3 label.py
+perl ./make_label/Pick.pl
+perl ./make_label/Split_processed.pl
+python3 ./make_label/label.py
 ```
 
 ### Train 
 Open split_5cv.ipynb and run the code inside. This step is to split the data set into 5 folds for the futural five-fold Cross Validation.
 For training, directly run 
 ```
+cd ./train
 bash bash-cv1.sh
 bash bash-cv2.sh
 bash bash-cv3.sh
@@ -72,8 +73,9 @@ bash bash-cv5.sh
 ```
 
 ### Prediction
-Users can run prediction code using our saved model. Download the 'predict' folder, then
+Users can run prediction code using our saved model. 
 ```
+cd ./predict
 python3 pred-cv1.py
 python3 pred-cv2.py
 python3 pred-cv3.py
@@ -83,7 +85,7 @@ python3 pred-cv5.py
 Then open dice_index.ipynb to calculate the dice coefficient
 
 ### Expression data in contaminated regions showed less coordinance within probesets
-Download folder 'compare_var', and open gene_expression.ipynb, run the code inside. Then
+Go to folder 'compare_var', and open gene_expression.ipynb, run the code inside. Then
 ```
 Rscript get_RMA.R
 python3 Var_compare.py
@@ -91,13 +93,16 @@ python3 Var_compare.py
 Open and run Var_compare.ipynb, you can access the result.
 
 ### Literature mining
-Download folder 'crawl' and run crawl.py using the following command 
+Run crawl.py using the following command 
 ```
-python3 crawl.py
+python3 ./crawl/crawl.py
 ```
 
 ### Recover Contaminated Probes
-Download folder 'recover' and run the code in recover.ipynb. Inside the ipynb file, there are some commands to ask you run R and python code:
+```
+cd ./recover
+```
+Run the code in recover.ipynb. Inside the ipynb file, there are some commands asking you run R and python code:
 ```
 Rscript recover.R
 python3 recover_intensity.py 
@@ -107,7 +112,7 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 
-## Vignettes -- if you want to test whether your sample has contamination
+## Vignette -- if you want to test whether your sample has contamination
 Have the microarray CEL file in hand and download Github folder 'Example', our deep learning model and HG-U133_Plus_2.cdf from OSF. Move the model and cdf file into 'Example'.<br />
 Before doing the first step, make sure you have changed the directory in cel_to_img.py. 
 First of all, you would need to recover your microarray cel file to an image:
