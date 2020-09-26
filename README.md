@@ -36,7 +36,7 @@ pip install opencv-python
 
 
 ## Dataset
-The data can be directly downloaded from [https://osf.io/g4qxu/?view_only=3aaf0f0469744e54befbc4f86143ab47] on Open Science Framework:
+The data can be directly downloaded from [Open Science Framework](https://osf.io/g4qxu/?view_only=3aaf0f0469744e54befbc4f86143ab47):
 * recovered v1-v6: contains 1703 recovered samples 
 * Contam_genes: contains the list of contaminated genes for every positive sample
 * label: human-labelled microarray images
