@@ -76,7 +76,7 @@ model4.load_weights('weights_4.h5')
 
 
 
-image1=cv2.imread('GSM707032.CEL.png') # Change the path to your cel file
+image1=cv2.imread('GSM707032.CEL.png') # Change the path to your png
 image1=(image1-np.mean(image1))/np.std(image1) #standardize test image
 image=np.zeros((size,size,1))
 image[0:image1.shape[0],0:image1.shape[1],0]=image1[:,:,0] #reshape to 1280*1280
