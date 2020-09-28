@@ -15,7 +15,7 @@ N_PROBE_SETS = cMace.PS
 ROWS = cMace.HEIGHT
 COLS = cMace.WIDTH
 
-path='GSM707032.CEL'
+path='./GSM707032.CEL'  # change the path to yours
 print(path)
 t=path.split('/')
 name='./'+t[-1]+'.png'
