@@ -43,7 +43,8 @@ The data can be directly downloaded from [Open Science Framework](https://osf.io
 * model: our deep learning model
 * HG-U133_Plus_2.cdf: cdf file for HG-U133_Plus_2 platform
 
-## Codes for experiments 
+## Experiments 
+Contact us for training data availability.
 
 ### Recovering of microarray images from CEL files
 Run the following command:
