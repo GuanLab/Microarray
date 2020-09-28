@@ -18,7 +18,4 @@ do
 
     python3 train_2d_simple_generator-cv4.py |tee -a log_4_cv4.txt
     cp weights_cv4.h5 weights_4_cv4.h5
-
-    python3 pred-cv4.py
-    python3 pred_random-cv4.py
 done
