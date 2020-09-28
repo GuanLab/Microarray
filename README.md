@@ -72,7 +72,7 @@ CUDA_VISIBLE_DEVICES=X bash bash-cv3.sh
 CUDA_VISIBLE_DEVICES=X bash bash-cv4.sh
 CUDA_VISIBLE_DEVICES=X bash bash-cv5.sh
 ```
-
+Trained model weights for each CV will be saved and used for prediction 
 ### Prediction
 Users can run prediction code using our saved model. 
 ```
@@ -114,7 +114,7 @@ Contam_list.ipynb is to give the list of contaminated genes in samples tested as
 
 
 ## Vignette -- if you want to test whether your sample has contamination
-Have the microarray CEL file in hand and download Github folder 'Example', our deep learning model and HG-U133_Plus_2.cdf from OSF. Move the model and cdf file into 'Example'.<br />
+Have the microarray CEL file in hand and download Github folder 'Example', our deep learning model and HG-U133_Plus_2.cdf from OSF. Move the model weights and cdf file into 'Example'.<br />
 Before doing the first step, make sure you have changed the directory in cel_to_img.py. 
 First of all, you would need to recover your microarray cel file to an image:
 ```
@@ -150,7 +150,7 @@ For example, if your CEL is called XX.CEL, XX.CEL.txt in recovered_vX contains r
 * My microarray sample does not appear in the set of 1,810 contaminated samples, does that mean my sample does not have contamination?<br />
 Answer: No. We only tested 37,724 microarray samples published before 2019. To get a better result, we encourage you follow our instruction and use our model to test your microarray sample.
 * The code does not work. What should I do?<br />
-Answer: We recommend that you check all the packages installed and check whether you have changed all the directories in the code. If that does not solve your problem, please create a ticket on the [GitHub Issue Tracker](https://github.com/GuanLab/Microarray/issues).
+Answer: We recommend that you check all the packages installed and check whether you have changed all the directories in the code. Make sure they are pointing to the right place. If that does not solve your problem, please create a ticket on the [GitHub Issue Tracker](https://github.com/GuanLab/Microarray/issues).
 * Can the model work on other platforms other than HG-U133_Plus_2?<br />
 Answer: We are working on that. 
 
