@@ -30,9 +30,9 @@ pip install opencv-python
 * [bs4](https://pypi.org/project/bs4/)
 * [requests](https://pypi.org/project/requests/2.7.0/)
 * [re](https://docs.python.org/3/library/re.html)
-* R (3.6.1)
+* [R](https://www.r-project.org/about.html) (3.6.1)
 * [Jupyter Notebook](https://jupyter.org/)
-* [Perl](https://www.perl.org/) (v5.26.1)
+* [Perl](https://www.perl.org/) (5.26.1)
 
 
 ## Dataset
