@@ -134,20 +134,22 @@ In order to recover the contaminated region, you should have the original CEL fi
 Rscript Example/recover_example.R
 python3 Example/recover_example.py
 ```
-Then recovered.txt will be the recovered probe intensities.
+Then recovered.txt will be the recovered probe intensities.<br />
+
+Here, we give an Example to let you know what are the input and outputs look like. Please check out if you want.
 
 ## If you want to use our recovered microarray data
-Our recovered data is available to be downloaded from Open Science Framework. Note that our recovered data only has 1703 microarray samples with defects, so please check data availability before using.
-* Microarray recovered probe expression: contains 1703 recovered samples. The recovered probe expressions of every sample were saved in a TXT file with the same name as CEL file. We save the recoverd value as: probe id: value. 
-* contam_genes: contains the list of contaminated genes for every positive sample
-For example, if your CEL is called XX.CEL, XX.CEL.txt in Microarray recovered probe expression contains recovered probe expression and XX.CEL.txt in contam_genes contains a list of genes with defects.
+Our recovered data is available to be downloaded from [Open Science Framework](https://osf.io/g4qxu/?view_only=3aaf0f0469744e54befbc4f86143ab47). Note that we recovered 1703 microarray samples with defects. 
+* recovered_v1 - v6: contains 1703 recovered samples. The recovered probe expressions of every sample were saved in a TXT file with the same name as CEL file. We save the recoverd value as [probe id: value] pair. 
+* contam_genes: contains the list of contaminated genes for every sample with defects (n = 1810)
+
+For example, if your CEL is called XX.CEL, XX.CEL.txt in recovered_vX contains recovered probe expression and XX.CEL.txt in contam_genes contains a list of genes with defects.
 
 ## FAQ
 * My microarray sample does not appear in the set of 1,810 contaminated samples, does that mean my sample does not have contamination?<br />
 Answer: No. We only tested 37,724 microarray samples published before 2019. To get a better result, we encourage you follow our instruction and use our model to test your microarray sample.
-* Can the deep learning model be applied to all platforms of microarrays? <br />
-Answer: No. We used microarray images of Hg-U133 Plus2 platform to train our model. The model validity on other platforms are not available yet.
 * The code does not work. What should I do?<br />
 Answer: We recommend that you check all the packages installed and check whether you have changed all the directories in the code. If that does not solve your problem, please create a ticket on the [GitHub Issue Tracker](https://github.com/GuanLab/Microarray/issues).
-
+* Can the model work on other platforms other than H-GU133_Plus2?<br />
+Answer: We are working on that. 
 
